@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block styles %}
+{{ super() }}
+<link rel="stylesheet" href="static/css/index.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+{% endblock styles %}
+
+{% block content %}
+
+<div  class="hero-section">
+  <div class="hero">
+    <div class="hero-content">
+        <h1>Unlock the Power of Text Recognition</h1>
+        <p>With Batch 16, unleash the potential of Optical Character Recognition (OCR) technology to streamline your workflow and extract valuable insights from your handwritten documents.</p>
+        <a href="#cre" class="more-button">Let's Goooo! contact us at</a>
+    </div>
+    <div class="hero-image">
+        <img src="static\uploads\hero.jpeg" alt="Hero Image">
+    </div>
+</div>
+
+<div class="container-fluid main-content pt-5 grid" id="us">
+    <div class="row mt-5 justify-content-center">
+        <div class="coltext-center">
+            <h3>UPLOAD AND EXPERIENCE YOUR HANDWRITING</h3>
+        </div>
+    </div>
+
+    <div class="rowmt-5" id="textify-prompt">
+        <div class="col">
+            <form method="POST" action="{{ url_for('home_page') }}" enctype=multipart/form-data>
+                {{ form.hidden_tag() }}
+                {{ form.photo.label }}: {{ form.photo }}
+                {{ form.submit(class="btn btn-outline-dark") }}
+            </form>
+        </div>
+    </div>
+
+    {% if text %}
+    <div class="row mt-51" style="background-color: #e7f3ff;">
+        <div class="col">
+            <p class="recognition-p">Recognition</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="img-display">
+                        <img class="img-fluid" src="{{ url_for('static', filename='uploads/' + filename) }}">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="text-display">
+                        <div style="background-color: white; padding: 20px;">
+                            <p>{{ text }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+  </div>
+  
+
+  <div class="creator-section" id="cre">
+    <img src="https://avatars.githubusercontent.com/u/94959102?s=96&v=4" alt="Batch-16" onclick="window.location.href='https://github.com/SUSH9391';">
+    <div class="text-container">
+      <h3>Creator</h3>
+      <h1>Batch - 16</h1>
+      <p>@Ink to bytes</p>
+      <div class="social-icons">
+        <a href="https://github.com/SUSH9391"><img src="https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_1280.png" alt="GitHub" title="GitHub"></a>
+        <a href="https://www.instagram.com/shubhamprajapatiofficial/"><img src="https://thumbs.dreamstime.com/b/rounded-instagram-logo-web-print-transparent-white-background-use-printing-purpose-165758567.jpg" alt="Instagram" title="Instagram"></a>
+        <a href="https://twitter.com/Auspicious_EX"><img src="https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.87170709.1707868800&semt=ais" alt="Twitter" title="Twitter"></a>
+      </div>
+    </div>
+  </div>
+  
+  
+
+</div>
+{% endblock content %}
