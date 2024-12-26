@@ -1,0 +1,234 @@
+
+/* For Hero */
+.hero {
+  margin-left: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.hero-content {
+  width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.more-button {
+  padding: 10px 20px;
+  background-color: #0466C8;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.more-button:hover {
+  background-color: #023E7D;
+  transition: 0.5s;
+}
+
+.hero-image img {
+  width: 70%;
+  border-radius: 10px;
+}
+
+/* Recognizsatin */
+.coltext-center h3 {
+  text-align: center;
+}
+
+.container-fluid.main-content {
+  text-align: center;
+}
+
+.row.mt-5.justify-content-center,
+.row#textify-prompt {
+  text-align: center;
+}
+
+.col.text-center {
+  text-align: center;
+}
+
+.coltext-center {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.row.mt-5 {
+  margin: 30px;
+  margin-top: 5rem; /* Adjust margin as needed */
+}
+
+/* Set background color to sky blue for the entire page */
+
+/* Style for the container holding the image and text */
+.row.mt-51 {
+  border-radius: 30px;
+  margin-top: 50px;
+  margin-left: 200px;
+  margin-right: 200px;
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Place items at the beginning and end of the container */
+  align-items: center; /* Vertically center align items */
+  padding: 20px; /* Add padding around the container */
+}
+
+.recognition-p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: right;
+  margin-right: 200px;
+}
+
+.img-display img {
+  border-radius: 30px;
+  max-width: 100%; /* Ensure the image does not exceed the container width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.text-display {
+  border-radius: 30px;
+  background-color: white; /* Set background color to white */
+  padding: 20px; /* Add padding around the text */
+  flex-grow: 1; /* Allow text to grow to fill remaining space */
+}
+
+
+/* Creator */
+
+.creator-section {
+  display: flex;
+  margin-top: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  justify-content: center; /* Center horizontally */
+  padding: 50px;
+  border: 2px solid #eee;
+  border-radius: 30px;
+}
+
+.creator-section img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  cursor: pointer; /* Indicate clickable */
+}
+
+.text-container {
+  flex: 1;
+  margin-left: 40px;
+  margin-top: 1 0px;
+}
+
+.text-container h1 {
+  margin-bottom: 3px;
+}
+
+.text-container h3 {
+  margin-bottom: 3px;
+  font-size: 20px;
+  color: #545454;
+}
+
+.text-container p {
+  font-size: 16px;
+  color: #888;
+}
+
+.social-icons {
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #ddd;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.social-icons a img {
+  width: 32px;
+  height: 32px; /* Adjust size as needed */
+}
+
+.social-icons a:hover {
+  color: #007bff;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #545454;
+  border-radius: 10px;
+  margin-left: 200px;
+  margin-right: 200px;
+  margin-top: 70px;
+  background-color: #ffffff;
+  color: #292929;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-info {
+  max-width: 50%;
+}
+
+.footer-info-title {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.footer-info-text {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.contact-info {
+  margin-top: 15px;
+}
+
+.contact-info a {
+  color: inherit;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+.footer-logo {
+  max-width: 40%;
+}
+
+.fp {
+  font-size: large;
+}
+
+.footer-logo img {
+  margin-top: 40px;
+  margin-left: 100px;
+  width: 60%;
+}
+
+/* Copyright */
+
+
+.Copy {
+    margin-top:  40px;
+    text-align: center;
+}
